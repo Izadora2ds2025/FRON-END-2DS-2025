@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+
+        background-color: blue;
+    }
+
+    hl   {
+         background-color: yellowgreen;
+         width: 200px;
+
+    }
+
+    ul li   {
+        color:pink 
+    }
+
+
+    h1{
+        color: green
+
+    }
+
+    #container{
+        background-color:white;
+        width:  100%;
+        height: 400px;
+
+
+        display:flex;
+        align-items: center; /*alinha verticalmente */
+        justify-content: space-evenly; /*alinha horizontamente*/
+
+    }
+
+
+    .caixa{
+
+
+        width: 200px;
+        height: 200px;
+        border: 5px solid rgb(0, 255, 72);
+        border-radius: 20px;
+    }
+
