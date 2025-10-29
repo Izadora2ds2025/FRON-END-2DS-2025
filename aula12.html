@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form javascript</title>
+    <link rel="stylesheet" href="aula12.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h2>Adicionar Dados</h2>
+        <input type="text" id="campo1" placeholder="campo 1 (ex: nome)" />
+        <input type="text" id="campo2" placeholder="campo 1 (ex: Email)" />
+        <input type="text" id="campo3" placeholder="campo 1 (ex: idade)" />
+        <button onclick="adicionarLinha()">Adicionar a tabela</button>
+    </div>
+     
+    <table id="tabelaDados">
+        <thead>
+            <tr>
+                 <th>nome</th>
+                 <th>Email</th>
+                 <th>idade</th>
+            </tr>
+        </thead>
+         <tbody>
+             <tr>
+           <td>izadora</td>
+           <td>steclan.izadora@email</td>
+           <td>16</td>
+             <tr>
+        <tbody>
+    </table>
+
+</body>
+
+<script>
+
+
+function adicionarLinha() {
+    //CAPTURANDO OS VALORES DOS CAMPOS HTML
+    const valor1 = document.getElementById('campo1').value.trim();
+    const valor2 = document.getElementById('campo2').value.trim();
+    const valor3 = document.getElementById('campo3').value.trim();
+
+    //VERIFICANDO SE TODOS OS CAMPOS ESTÂO PRENCHIDOS
+    if( valor1=== ''|| valor2 === '' || valor3 === ''){
+        alert("por favor, preencha todos os campos!");
+        return;
+
+    }
+}
+
+
+</script>
+
+</html>
